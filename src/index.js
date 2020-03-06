@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-var versao = "Versão 1.2";
+var versao = "Versão 1.3";
 
 // Jogo simples onde escolhemos um numero
 // e o computador tem que acertar o numero que escolhemos
@@ -65,7 +65,7 @@ function App() {
           <br />
           <br />
         </p>
-        <button onClick={iniciarJogo}>Iniciar o Jogo!</button>
+        <button className="btnIniciar" onClick={iniciarJogo}>Iniciar o Jogo!</button>
       </div>
     );
   }
@@ -119,7 +119,7 @@ function App() {
     return (
       <div className="App">
         <p>
-          Acretou o número {palpite} com {numPalpites} chutes!
+          Acertou o número {palpite} com {numPalpites} chutes!
         </p>
         <button onClick={iniciarJogo}>Jogar novamente!</button>
       </div>
